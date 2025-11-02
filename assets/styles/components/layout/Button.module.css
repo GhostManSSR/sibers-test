@@ -1,0 +1,49 @@
+
+.button,
+.button__success,
+.button__danger,
+.button__warning {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    font-size: 14px;
+    width: 180px;
+    height: 42px;
+    font-weight: 400;
+    border-radius: 15px;
+    /*-webkit-box-shadow: 0px -1px 34px 32px rgba(90, 93, 96, 0.2);*/
+    /*-moz-box-shadow: 0px -1px 34px 32px rgba(90, 93, 96, 0.2);*/
+    /*box-shadow: 0px -1px 34px 32px rgba(90, 93, 96, 0.2);*/
+    transition: 0.5s all;
+    font-family: 'Inter_Bold';
+}
+
+.button:hover{
+    color: #fff;
+    background-color: #1a9fd1;
+    transition: 0.5s all;
+    -webkit-box-shadow: 0px -1px 34px 32px rgba(14, 140, 237, 0.2);
+    -moz-box-shadow: 0px -1px 34px 32px rgba(14, 140, 237, 0.2);
+    box-shadow: 0px -1px 34px 32px rgba(14, 140, 237, 0.2);
+}
+
+.button__success{
+    background: rgba(26, 219, 19, 0.75);
+}
+
+.button__danger{
+    background: rgba(211, 31, 31, 0.75);
+}
+
+.button__warning:hover{
+    transition: 0.5s all;
+    -webkit-box-shadow: 0px -1px 34px 32px rgba(130, 0, 253, 0.2);
+    -moz-box-shadow: 0px -1px 34px 32px rgba(130, 0, 253, 0.2);
+    box-shadow: 0px -1px 34px 32px rgba(130, 0, 253, 0.2);
+}
+
+.button__warning{
+    background: rgb(130, 0, 253);
+}

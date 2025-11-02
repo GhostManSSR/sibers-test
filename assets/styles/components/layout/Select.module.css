@@ -1,0 +1,76 @@
+.select__block {
+    position: relative;
+    width: 200px;
+    user-select: none;
+    font-family: Arial, sans-serif;
+}
+
+.option, .option_selected {
+    display: flex;
+    border-radius: 15px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    height: 36px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.option_selected {
+    background-color: rgba(84, 91, 112, 0.39);
+    color: white;
+    border:1px solid #000;
+    font-weight: bold;
+}
+
+.select__scroll {
+    width: 100%;
+    margin-top: 5px;
+    max-height: 140px;
+    overflow-y: scroll;
+    gap: 5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: inherit;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.select__scroll::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+.select__scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.select__scroll.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.select__scroll.closed {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
