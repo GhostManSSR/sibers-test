@@ -1,0 +1,13 @@
+@import './fonts.css';
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    background: rgba(240, 240, 240, 0.8);
+}
+
+a{
+    text-decoration: none;
+}
+

@@ -11,6 +11,14 @@
 @font-face {
     font-family: "Inter_Bold";
     src: local("Inter"), url("/fonts/Inter_Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter_Medium";
+    src: local("Inter"), url("/fonts/Inter_Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
