@@ -19,7 +19,7 @@ const Select = ({ ...props }) => {
     }, []);
 
     const onOptionClick = (option) => {
-        props.setCurrentUser && props.setCurrentUser(option.title);
+        props.setCurrentUserName && props.setCurrentUserName(option.title);
         setValue(option.title);
         setOpen(false);
         props.onChange && props.onChange(option);
