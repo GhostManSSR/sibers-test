@@ -1,0 +1,8 @@
+
+.input_field{
+    display: flex;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-family: "Inter_Medium";
+}

@@ -1,0 +1,17 @@
+
+.card_setting__container, .card-chat__container{
+    display: flex;
+    border-radius: 15px;
+    padding: 15px 15px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.card_chat__container{
+
+}
+
+.card_setting__container{
+    flex-direction: column;
+    gap: 15px;
+}
