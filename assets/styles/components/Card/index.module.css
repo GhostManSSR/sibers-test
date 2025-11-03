@@ -1,10 +1,32 @@
 
-.card_setting__container, .card-chat__container{
+.card_setting__container, .card-chat__container, .card_user__container{
     display: flex;
     border-radius: 15px;
     padding: 15px 15px;
     width: 100%;
     background-color: #fff;
+}
+
+.card_user__container{
+    width: 97.5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_user__line_name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_user__username{
+    cursor: pointer;
+    font-family: "Inter_Bold";
+}
+
+.card_user__buttons{
+    display: flex;
+    gap:15px;
 }
 
 .card_chat__container{
@@ -14,4 +36,10 @@
 .card_setting__container{
     flex-direction: column;
     gap: 15px;
+}
+
+@media (max-width: 420px) {
+    .card_user__container{
+        width: 90%;
+    }
 }
